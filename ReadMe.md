@@ -1,5 +1,17 @@
 # The NetX Protocol
 
+## The Protocol
+
+See [docs/reference.md](docs/reference.md).
+
+## Contributing
+
+See [CONTRIBUTING.md](CONTRIBUTING.md).
+
+## License
+
+See [License.txt](License.txt).
+
 ____
 
 <footer>

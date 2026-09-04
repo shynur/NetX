@@ -4,6 +4,4 @@
 -Wall
 -W
 -ferror-limit=0
---gcc-install-dir=/usr/lib/gcc/x86_64-linux-gnu/15
--Iinclude
--fmodules
+--gcc-install-dir=/opt/gcc/lib/gcc/x86_64-pc-linux-gnu/17.0.0

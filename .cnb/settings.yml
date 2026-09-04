@@ -1,6 +1,0 @@
-workspace:
-  launch:
-    button:
-      name: 原神, 启动!
-      description: 我操, 还有原批?
-      hoverImage: https://cnb.cool/shynur/ide/-/git/raw/trunk/.cnb/launch-hover.gif

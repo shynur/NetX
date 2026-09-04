@@ -1,7 +1,7 @@
 $:
   vscode:
     - runner:
-        cpus: 64
+        cpus: 2
       docker:
         image: docker.cnb.cool/shynur/ide
       services:
@@ -18,17 +18,3 @@ $:
           script: |
             rm -f ~/.gitconfig
             setsid launch-this-ide.bash </dev/null &>/var/log/shynur-ide-launch.log &
-  web_trigger_bookkeep:
-    - imports: https://cnb.cool/shynur/secrets/-/blob/trunk/my-mihomo.yaml
-      runner:
-        cpus: 64
-      stages:
-        - timeout: 12h
-        - script: |
-            bash <<'EOF'
-              cd `mktemp -d`
-              git clone --depth=1 https://github.com/shynur/my-m`echo i`n`echo e`r build
-              echo "Use VPN $MY_MIHOMO_CFG_NAME"
-              echo "开始记账, 将持续 ${bookkeeping_duration}min"
-              timeout ${bookkeeping_duration}m ./build/start.bash -m -a rx -u shynur996.cnb_build_${bookkeeping_duration}m
-            EOF

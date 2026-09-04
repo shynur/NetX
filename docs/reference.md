@@ -18,3 +18,11 @@ If a node 向 another node which is listening WebSocket 发起连接, 则 these 
 
 If a node 向 another node which is listening HTTP 发起连接, 则 these two nodes 之间连通.
 The node which is listening HTTP 会使用 SSE 建立持久连接, 而对方 node 会使用 HTTP POST 发送数据.
+
+## Node
+
+```typescript
+class Node {
+
+}
+```

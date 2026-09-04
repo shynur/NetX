@@ -1,7 +1,0 @@
--fsyntax-only
--std=c++26
--Wpedantic
--Wall
--W
--ferror-limit=0
---gcc-install-dir=/opt/gcc/lib/gcc/x86_64-pc-linux-gnu/17.0.0

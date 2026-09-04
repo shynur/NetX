@@ -31,3 +31,9 @@
 倾向于使用 Latin abbreviation, 正如某些论文与报告.
 
 允许使用常见的网络用语的首字母缩写, 正如某些英文论坛和邮件列表.
+
+## 交换格式类型描述
+
+We prefer to use JSON as the exchange format.
+
+类似 XML Schema, 我们使用 TypeScript 语法来定义 JSON 的数据结构, 供各种编程语言的 NetX SDK 参考.

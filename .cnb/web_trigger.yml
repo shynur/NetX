@@ -1,0 +1,10 @@
+branch:
+  - buttons:
+      - name: 记账
+        event: web_trigger_bookkeep
+        inputs:
+          bookkeeping_duration:
+            name: 时长 (min)
+            type: input
+            required: yes
+            default: "60"

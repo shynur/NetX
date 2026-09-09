@@ -28,8 +28,7 @@ class NetXRecipe(conan.ConanFile):
         conan.tools.cmake.cmake_layout(self)
 
     def requirements(self):
-        # E.g., self.requires('fmt/[>=10]')
-        ...
+        self.requires('fmt/[>=12.0.0 <13]')
 
     def generate(self):
         deps = conan.tools.cmake.CMakeDeps(self)

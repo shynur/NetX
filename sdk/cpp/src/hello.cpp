@@ -1,9 +1,7 @@
 #include <netx/hello.hpp>
-#include <print>
+#include <fmt/format.h>
+#include <iostream>
 
 void netx::hello() {
-    std::println(
-        "Hello, {}!",
-        "NetX"
-    );
+    std::cout << ::fmt::format("Hello, {}!", "NetX") << std::endl;
 }

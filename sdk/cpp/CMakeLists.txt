@@ -7,6 +7,7 @@ project(NetX
 
 #---------------- dependencies ----------------
 find_package(Threads)
+find_package(fmt CONFIG REQUIRED)
 
 #---------------- libnetx ----------------
 add_library(netx)
@@ -24,6 +25,9 @@ target_sources(netx
 target_link_libraries(netx
     PRIVATE
         Threads::Threads
+        fmt::fmt
+    #PUBLIC
+    #    nlohmann::json  # 仅举例, 类似这种库大概率需要是 public 的
 )
 target_compile_features(netx
     PUBLIC

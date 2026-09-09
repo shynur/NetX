@@ -1,5 +1,8 @@
-import conan
-import conan.tools.cmake
+'''
+JFrog Conan v2 recipe
+'''
+
+import conan, conan.tools.cmake
 
 
 class NetXRecipe(conan.ConanFile):

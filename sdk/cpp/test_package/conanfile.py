@@ -1,8 +1,4 @@
-import os
-
-import conan
-import conan.tools.build
-import conan.tools.cmake
+import os, conan, conan.tools.build, conan.tools.cmake
 
 
 class NetxTestConan(conan.ConanFile):

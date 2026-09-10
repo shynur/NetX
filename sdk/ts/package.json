@@ -1,0 +1,26 @@
+{
+	"name": "netx",
+	"version": "0.1.0",
+	"description": "The NetX Protocol SDK for TypeScript/ECMAScript (server & browser)",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "./dist/netx.d.ts",
+			"default": "./dist/netx.js"
+		}
+	},
+	"files": [
+		"dist"
+	],
+	"scripts": {
+		"build": "tsc",
+		"prepack": "npm run build"
+	},
+	"dependencies": {
+		"ws": "^8.18"
+	},
+	"devDependencies": {
+		"@types/ws": "^8.18",
+		"typescript": "^6"
+	}
+}

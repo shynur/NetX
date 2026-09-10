@@ -1,3 +1,5 @@
+// 示例代码, 用于告知其它 developers 如何引入 3rd 库 (以及 conanfile.py 和 CMakeLists.txt 中要怎么配)
+
 #include <netx/hello.hpp>
 #include <fmt/format.h>
 #include <iostream>

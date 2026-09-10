@@ -1,5 +1,6 @@
 /build/
 /install/
+/CMakeUserPresets.json
 /test_package/build/
 /test_package/__pycache__/
 /test_package/CMakeUserPresets.json

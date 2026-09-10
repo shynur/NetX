@@ -29,6 +29,7 @@ class NetXRecipe(conan.ConanFile):
 
     def requirements(self):
         self.requires('fmt/[>=12.0.0 <13]')
+        self.requires('nlohmann_json/[>=3.11.3 <4]', transitive_headers=True)
 
     def generate(self):
         deps = conan.tools.cmake.CMakeDeps(self)

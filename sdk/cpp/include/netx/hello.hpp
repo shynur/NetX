@@ -1,5 +1,7 @@
 #pragma once
 
+#include <nlohmann/json.hpp>
+
 namespace netx {
-    void hello();
+    auto hello_message() -> ::nlohmann::json;
 }

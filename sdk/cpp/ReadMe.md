@@ -1,12 +1,12 @@
 # NetX
 
-## 如何在你的项目中接入 SDK
+## 如何在君の项目中接入 SDK
 
 ### CMake User
 
 #### 从源码 (`add_subdirectory`)
 
-把本仓库放进你的项目 (e.g., git submodule 到 `third_party/NetX`), 然后在你的 CML 添加:
+把本仓库放进君の项目仓库中 (e.g., git submodule 到 `third_party/NetX`), 然后在 CML 中添加:
 
 ```cmake
 add_subdirectory(third_party/NetX/sdk/cpp)
@@ -50,7 +50,7 @@ target_link_libraries(your_target PRIVATE NetX::netx)
 conan create . --build=missing -s build_type=RelWithDebInfo
 ```
 
-然后在你的 `conanfile.txt` 中声明依赖:
+然后在君の `conanfile.txt` 中声明依赖:
 
 ```ini
 [requires]

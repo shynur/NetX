@@ -1,4 +1,4 @@
-# NetX
+# NetX C++ SDK
 
 ## 如何在君の项目中接入 SDK
 

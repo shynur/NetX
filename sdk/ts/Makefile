@@ -5,7 +5,7 @@ SHELL = /bin/bash -O globstar
 all:
 
 .PHONY: clean
-distclean:
+clean:
 	rm -rf dist node_modules
 
 %/:

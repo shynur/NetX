@@ -7,8 +7,8 @@ project(NetX
 
 #---------------- dependencies ----------------
 find_package(Threads)
-find_package(fmt CONFIG REQUIRED)
-find_package(nlohmann_json CONFIG REQUIRED)
+find_package(nlohmann_json 3.12 CONFIG REQUIRED)
+find_package(spdlog 1.17 CONFIG REQUIRED)
 
 #---------------- libnetx ----------------
 add_library(netx)
@@ -26,7 +26,7 @@ target_sources(netx
 target_link_libraries(netx
     PRIVATE
         Threads::Threads
-        fmt::fmt
+        spdlog::spdlog
     PUBLIC
         nlohmann_json::nlohmann_json
 )

@@ -17,6 +17,11 @@ NetX node 之间的 edge 是双向的.
 新 edge 的建立 (或者说, 新 node 的加入) 采用邀请制.
 邀请码就是同一网络下的某个 node 的 IP:port, 这样新 node 才能向这个 node 发起连接.
 
+一个 node 可以被多个 nodes 连接;
+一个 node 也可以主动向多个 nodes 发起连接;
+node 可以同时是连接的发起方和接收方;
+两个 nodes 双方可以互相主动发起连接, 相当于 2 条 edges.
+
 ### 基于 WebSocket の edge
 
 任何 node 可以主动监听 WebSocket 连接.

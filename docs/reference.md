@@ -7,6 +7,8 @@ E.g., 家庭 Wi-Fi 下有一个 NetX 网络, 而公司局域网下有另一个 N
 但如果一台公网 server 上也运行了一个 NetX node 而且分别被家庭 Wi-Fi 中的某个 node 和公司局域网中的某个 node 连接,
 则这两个 NetX 网络就连通了, 可以统称为一个 NetX 网络.
 
+NetX 网络里随时可能有 新 node 的加入 or 旧 node 的离开 - NetX 网络是动态且去中心化的.
+
 在设计高层通信协议 (e.g., DDS, RPC, etc.) 时, 只关注 NetX 网络的逻辑拓扑结构.
 因此, 我们将屏蔽 IP 等实现细节, 假设每个 node 都只知晓相邻 node, etc.
 

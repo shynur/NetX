@@ -12,7 +12,7 @@ $:
             if [ $SHYNUR_IDE_PACKED_VOLUME ]; then
               pack-vol-of-shynur-ide.bash SHYNUR_IDE_PACKED_VOLUME
             else
-              echo "SHYNUR_IDE_PACKED_VOLUME 未注入, 跳过解包" >&2
+              echo 'SHYNUR_IDE_PACKED_VOLUME 未注入, 跳过解包' >&2
             fi
         - name: launch shynur-ide
           script: |
